@@ -1,0 +1,32 @@
+#course code didn't work
+#Options +Multiviews
+#RewriteEngine On
+#RewriteBase /3_mvc_framework_blog/public/
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.+)$ /index.php?url=$1 [QSA,L]
+
+
+#found the below part on internet
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/js/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+#<IfModule mod_rewrite.c>
+#  Options -Multiviews
+#  RewriteEngine On
+#  RewriteBase /3_mvc_framework/public
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+#</IfModule>
+#Options +FollowSymLinks -MultiViews
+#
+#RewriteEngine On
+#RewriteBase /3_mvc_framework_blog/public
+#
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
