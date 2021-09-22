@@ -10,7 +10,7 @@
     define('APPROOT' , dirname(dirname(__FILE__)));
 
     //URLROOT
-    define('URLROOT' , 'localhost/projects/web/3_mvc_framework_blog/public');
+    define('URLROOT' , 'http://localhost//projects/web/3_mvc_framework_blog');
 
     //SITENAME
     define('SITENAME' , 'MVC Framework');
